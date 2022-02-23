@@ -1,5 +1,5 @@
 .body {
-  font-family: "Roboto", "Sans serif";
+  font-family: "Whyte", "Sans serif";
   margin: 0;
   padding: 0;
 }
@@ -249,8 +249,14 @@
   .header-banner {
     gap: 3rem;
   }
+
+  .--container {
+    align-items: center;
+  }
+
   .header-banner__title {
     font-size: 3.25rem;
+    margin-top: 0;
   }
 
   .redireccionar {
