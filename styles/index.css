@@ -28,10 +28,23 @@
   display: none;
 }
 
+.header-nav__logo-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 3.5rem;
+}
+
+.header-nav__logo {
+    width: 100%;
+}
+
 .header-nav__title {
   color: #fff;
   font-family: "Gagalin";
-  margin: 0;
+  margin: 0 0 0 1rem;
+
+  padding: 0;
 }
 
 .header-nav__link {
