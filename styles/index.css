@@ -35,16 +35,23 @@
     width: 3.5rem;
 }
 
+.header-nav__logo-anchor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .header-nav__logo {
     width: 100%;
+    cursor: pointer;
 }
 
 .header-nav__title {
   color: #fff;
   font-family: "Gagalin";
-  margin: 0 0 0 1rem;
-
-  padding: 0;
+  margin: 0;
+  padding-left: 1rem;
 }
 
 .header-nav__link {
