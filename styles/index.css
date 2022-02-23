@@ -61,6 +61,20 @@
   font-size: 1.25rem;
 }
 
+.about:hover {
+  color: #03718d;
+}
+
+.library {
+  background: #03718d;
+  border-radius: .8rem;
+  padding: .6rem 1rem;
+}
+
+.library:hover {
+  background: #2a9d8f;
+}
+
 .header-banner {
   display: flex;
   justify-content: space-between;
