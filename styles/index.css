@@ -96,13 +96,20 @@
 }
 
 .redireccionar {
-  color: #ffe;
+  font-weight: 700;
+  color:#03718d;
   font-size: 1rem;
   text-decoration: none;
   display: inline-block;
-  background-color: #2a9d8f;
+  background-color: #fff;
   padding: 0.75rem;
   border-radius: 1.25rem;
+}
+
+.redireccionar:hover {
+  border: .2rem solid #fff;
+  color: #fff;
+  background: #03718d;
 }
 
 .header-banner__img--container {
