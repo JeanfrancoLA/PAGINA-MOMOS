@@ -1,5 +1,5 @@
 .body {
-  font-family: "Whyte", "Sans serif";
+  font-family: "Roboto", "Sans serif";
   margin: 0;
   padding: 0;
 }
@@ -82,17 +82,17 @@
 }
 
 .redireccionar {
-  color: #fff;
+  color: #ffe;
   font-size: 1rem;
   text-decoration: none;
   display: inline-block;
-  background-color: #00028f;
+  background-color: #2a9d8f;
   padding: 0.75rem;
   border-radius: 1.25rem;
 }
 
 .header-banner__img--container {
-  width: 45rem;
+  width: 60rem;
   margin: 0;
 }
 
@@ -274,8 +274,12 @@
     align-items: center;
   }
 
+  .header-banner__description {
+      text-align: left;
+  }
+
   .header-banner__title {
-    font-size: 3.25rem;
+    font-size: 4rem;
     margin-top: 0;
   }
 
