@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Momazos 2022</title>
+    <link rel="shortcut icon" href="./rana-favicon.png">
     <meta name="title" content="Momazos 2022" />
     <meta name="description" content="Los verdaderos momos :V" />
     <meta property="og:type" content="website" />
@@ -14,8 +15,11 @@
       content="https://jeanfrancola.github.io/PAGINA-MOMOS/"
     />
     <meta property="og:title" content="Momazos 2022" />
-    <meta property="og:description" content="Los verdaderos momos :V" />
-    <meta property="og:image" content="https://i.postimg.cc/SKn8S1ZK/260652632-10225243629734384-6890327234113813381-n.png" />
+    <meta property="og:description" content="Los verdaderos memes y momazos del año 😂" />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/zDcsHYwX/image.png"
+    />
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
@@ -23,26 +27,34 @@
     />
     <meta property="twitter:title" content="Momazos 2022" />
     <meta property="twitter:description" content="Los verdaderos momos :V" />
-    <meta property="twitter:image" content="https://i.postimg.cc/SKn8S1ZK/260652632-10225243629734384-6890327234113813381-n.png" />
+    <meta
+      property="twitter:image"
+      content="https://i.postimg.cc/zDcsHYwX/image.png"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body class="body">
     <header class="header">
       <div class="header-nav --container">
-        <h1 class="header-nav__title">Momazos 2022</h1>
+        <figure class="header-nav__logo-container">
+          <a href="./" class="header-nav__logo-anchor">
+            <img src="./img/logo.png" alt="./" href="./" class="header-nav__logo">
+          <h1 class="header-nav__title">Momazos</h1>
+          </a>
+        </figure>
         <nav class="header-nav--container">
-          <a class="header-nav__link" href="#">Biblioteca</a>
-          <a class="header-nav__link" href="#">Info</a>
+          <a class="header-nav__link about" href="#">Sobre Momazos</a>
+          <a class="header-nav__link library" href="#">Biblioteca</a>
         </nav>
       </div>
       <section class="header-banner --container">
         <section class="header-banner__description">
           <h2 class="header-banner__title">
-            El mejor contenido en momos del año.
+            El mejor contenido de memes y momazos del año!
           </h2>
           <a href="#main-contenido" class="redireccionar"
-            >Comenzar a Explorar</a
+            >Ir a explorar memes</a
           >
         </section>
         <figure class="header-banner__img--container">
@@ -69,7 +81,7 @@
     <main class="main" id="main-contenido">
       <div class="momazos-container">
         <h1 class="momazos-title">Catálogo de memes</h1>
-        <input class="momazos-buscador" type="text" id="buscador" />
+        <input class="momazos-buscador" type="text" placeholder='"Ponte las pilas crag"' id="buscador" />
         <div id="resultado"></div>
       </div>
     </main>

@@ -1,274 +1,338 @@
 .body {
-    font-family: 'Roboto', 'Sans serif';
-    margin: 0;
-    padding: 0;
+  font-family: "Roboto", "Sans serif";
+  margin: 0;
+  padding: 0;
 }
 
 .--container {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to Right, #03718d, #20f8ff);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.header-nav--container {
+  display: none;
+}
+
+.header-nav__logo-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 3.5rem;
+}
+
+.header-nav__logo-anchor {
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(to Right, #03718d, #20f8ff);
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
-    .header-nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-    }
-        .header-nav--container{
-            display: none;
-        }
+.header-nav__logo {
+    width: 100%;
+    cursor: pointer;
+}
 
-        .header-nav__title {
-            color: #fff;
-            font-family: 'Gagalin';
-            margin: 0;
+.header-nav__title {
+  color: #fff;
+  font-family: "Gagalin";
+  margin: 0;
+  padding-left: 1rem;
+}
 
-        }   
+.header-nav__link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+}
 
-        .header-nav__link {
-            color: #fff;
-            text-decoration: none;
-            margin-right: .75rem;
-            font-size: 1.25rem;
-        }
+.about:hover {
+  color: #03718d;
+}
 
+.library {
+  background: #03718d;
+  border-radius: .8rem;
+  padding: .6rem 1rem;
+}
 
-    .header-banner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 90vh;
-        gap: 1rem;
-        padding: 1rem;
-    }
+.library:hover {
+  background: #2a9d8f;
+}
 
-        .header-banner__description {
-            text-align: center;
-        }
+.header-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  gap: 1rem;
+  padding: 1rem;
+}
 
-        .header-banner__title {
-            color: #fff;
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1.25rem;
-        }
+.header-banner__description {
+  text-align: center;
+}
 
-        .redireccionar {
-            color: #fff;
-            font-size: 1rem;
-            text-decoration: none;
-            display: inline-block;
-            background-color: #00028f;
-            padding: .75rem;
-            border-radius: 1.25rem;
-        }
+.header-banner__title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
 
-        .header-banner__img--container {
-            width: 45rem;
-            margin: 0;
-        }
+.redireccionar {
+  font-weight: 700;
+  color:#03718d;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0.75rem;
+  border-radius: 1.25rem;
+}
 
-        .header-banner__img {
-            width: 100%;
-        }
+.redireccionar:hover {
+  border: .2rem solid #fff;
+  color: #fff;
+  background: #03718d;
+}
 
+.header-banner__img--container {
+  width: 60rem;
+  margin: 0;
+}
 
-    .emoji {
-        background-image: url("https://w7.pngwing.com/pngs/599/251/png-transparent-facebook-like-button-computer-icons-i-smiley-emoticon-button-thumbnail.png");
-        background-size: cover;
-        border-radius: 50%;
-        /* opacity: .7; */
-        position: absolute;
-        bottom: -120rem;
-        animation: movimiento 3s linear infinite;
-    }
+.header-banner__img {
+  width: 100%;
+}
 
-        .emoji:nth-child(1) {
-            width: 5rem;
-            height: 5rem;
-            left: 5%;
-            animation-duration: 3s;
-            animation-delay: 3s;
-        }
+.emoji {
+  background-image: url("https://emojitool.com/img/apple/ios-13.3/face-with-tears-of-joy-1683.png");
+  background-size: cover;
+  border-radius: 50%;
+  /* opacity: .7; */
+  position: absolute;
+  bottom: -120rem;
+  animation: movimiento 3s linear infinite;
+}
 
-        .emoji:nth-child(2) {
-            width: 7rem;
-            height: 7rem;
-            left: 50%;
-            animation-duration: 3.5s;
-        }
+.emoji:nth-child(1) {
+  width: 5rem;
+  height: 5rem;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
 
-        .emoji:nth-child(3) {
-            width: 3rem;
-            height: 3rem;
-            left: 70%;
-            animation-duration: 4s;
-        }
+.emoji:nth-child(2) {
+  width: 7rem;
+  height: 7rem;
+  left: 50%;
+  animation-duration: 3.5s;
+}
 
-        .emoji:nth-child(4) {
-            width: 5rem;
-            height: 5rem;
-            left: 20%;
-            animation-duration: 4.5s;
-        }
+.emoji:nth-child(3) {
+  width: 3rem;
+  height: 3rem;
+  left: 70%;
+  animation-duration: 4s;
+}
 
-        .emoji:nth-child(5) {
-            width: 8rem;
-            height: 8rem;
-            left: 80%;
-            animation-duration: 2.5s;
-        }
+.emoji:nth-child(4) {
+  width: 5rem;
+  height: 5rem;
+  left: 20%;
+  animation-duration: 4.5s;
+}
 
-        .emoji:nth-child(6) {
-            width: 3rem;
-            height: 3rem;
-            left: 90%;
-            animation-duration: 4s;
-            animation-delay: 2s;
-        }
+.emoji:nth-child(5) {
+  width: 8rem;
+  height: 8rem;
+  left: 80%;
+  animation-duration: 2.5s;
+}
 
-        .emoji:nth-child(7) {
-            width: 2rem;
-            height: 2rem;
-            left: 15%;
-            animation-duration: 6s;
-        }
+.emoji:nth-child(6) {
+  width: 3rem;
+  height: 3rem;
+  left: 90%;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
 
-        .emoji:nth-child(8) {
-            width: 3rem;
-            height: 3rem;
-            left: 10%;
-            animation-duration: 5s;
-        }
+.emoji:nth-child(7) {
+  width: 2rem;
+  height: 2rem;
+  left: 15%;
+  animation-duration: 6s;
+}
 
+.emoji:nth-child(8) {
+  width: 3rem;
+  height: 3rem;
+  left: 10%;
+  animation-duration: 5s;
+}
 
-    @keyframes movimiento {
-        0% {
-            bottom: 0;
-            opacity: 0;
-        }
+@keyframes movimiento {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
 
-        30% {
-            transform: translateX(50px);
-        }
+  30% {
+    transform: translateX(50px);
+  }
 
-        50% {
-            opacity: .9;
-            filter: brightness(110%);
-        }
+  50% {
+    opacity: 0.9;
+    filter: brightness(110%);
+  }
 
-        100% {
-            bottom: 100vh;
-            opacity: 0;
-            transform: translateY(50px);
-        }
-    }
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
 
+.main {
+  min-height: 92vh;
+  margin: 0 auto;
+  /* background-color: rgba(119, 214, 251, 0.479); */
+  background-image: url("https://fondosmil.com/fondo/57521.jpg");
+  background-size: cover;
+  padding: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.momazos-title {
+  color: #20f8ff;
+}
+.momazos-buscador {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
 
-.main{
-    min-height: 92vh;
-    margin: 0 auto;
-    /* background-color: rgba(119, 214, 251, 0.479); */
-    background-image: url("https://fondosmil.com/fondo/57521.jpg");
-    background-size: cover;
-    padding:  3rem;
-    text-align: center;
+.meme-container {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0.25rem 0.5rem 0.75rem 0.5rem #03718d;
+  padding: 2rem;
+}
+
+.meme-img-container {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.1rem 0 rgba(47, 144, 255, 0.459);
+}
+
+.meme-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.meme-img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.meme-title {
+  font-size: 2rem;
+  font-style: italic;
+  color: #20d5db;
+  margin: 0;
+}
+
+.meme-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.meme-boton {
+  background-color: #2054ff;
+  padding: 0.75rem;
+  width: 10rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.meme-boton:hover {
+  filter: brightness(150%);
+}
+
+@media (min-width: 800px) {
+  .header-nav--container {
+    display: block;
+  }
+
+  .header-banner {
+    gap: 3rem;
+  }
+
+  .--container {
+    align-items: center;
+  }
+
+  .header-banner__description {
+      text-align: left;
+  }
+
+  .header-banner__title {
+    font-size: 4rem;
+    margin-top: 0;
+  }
+
+  .redireccionar {
     font-size: 1.5rem;
+    padding: 1.25rem 2rem;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+  }
+  .momazos-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .momazos-buscador {
+    width: 30rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 1.25rem;
+    padding-left: 1rem;
+  }
+
+  .momazos-buscador::onclick {
+    border: 2p solid #20d5db;
+    font-size: 1rem;
+  }
+
+  .meme-img-container {
+    width: 30rem;
+    height: 20rem;
+  }
 }
-    .momazos-title{
-        color: #20f8ff;
-    }
-    .momazos-buscador{
-        width: 10rem;
-        height: 2rem;
-        border-radius: 1rem;
-    }
-
-    .meme-container{
-        display: flex;
-        margin-top: 2rem;
-        flex-direction:column;
-        gap: 1rem;
-        align-items: center;
-        box-shadow: .25rem .5rem .75rem .5rem #03718d;
-        padding: 2rem;
-
-    }
-
-    .meme-img-container{
-        width: 15rem;
-        height: 10rem;
-        border-radius: 1rem;
-        box-shadow: .5rem .5rem .1rem 0 rgba(47, 144, 255, 0.459);
-    }
-
-    .meme-img{
-        width: 100%;
-        height: 100%;
-        border-radius: 1rem;
-    }
-    .meme-img:hover{
-        transform: scale(1.1,1.1);
-    }
-
-    .meme-title{
-        font-size: 2rem;
-        font-style: italic;
-        color: #20d5db;
-        margin: 0;
-    }
-
-    .meme-info-container{
-        display: flex;
-        flex-direction:column;
-        gap: 1rem;
-        align-items: center;
-    }
-    .meme-boton{
-        background-color: #2054ff;
-        padding: .75rem;
-        width: 10rem;
-        border-radius: 1rem;
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.5rem;
-    }
-    .meme-boton:hover{
-        filter: brightness(150%);
-    }
-
-    @media (min-width: 800px) {
-        .header-nav--container{
-            display: block;
-        }
-
-        .header-banner {
-            gap: 3rem   ;
-        }
-        .header-banner__title {
-            font-size: 3.25rem;
-        }
-
-        .redireccionar {
-            font-size: 1.5rem;
-            padding: 1.25rem;
-        }
-        .momazos-buscador{
-            width: 30rem;
-            border-radius: 2.25rem;
-        }
-        .meme-img-container{
-                width: 30rem;
-                height: 20rem;
-        }
-    }
